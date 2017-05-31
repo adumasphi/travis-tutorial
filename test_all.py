@@ -16,4 +16,4 @@ def test_numpy_partition():
     
 def test_numpy_partition():
     input_arr = np.array([3, 2, -1, 10])
-    np.testing.assert_array_equal(input_arr, [3, 2, -1, 11])
+    np.testing.assert_array_equal(input_arr, [3, 2, -1, 10])
