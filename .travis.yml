@@ -16,4 +16,4 @@ install:
   - docker build -t test-container --build-arg numpy_version=$NUMPY_VERSION .
 
 script:
-- docker run -v $PWD:/var/travis_tutorial test-container /bin/bash -c "cd /var/travis_tutorial && pytest"
+  - docker run -v $PWD:/var/travis_tutorial test-container /bin/bash -c "cd /var/travis_tutorial && pytest"
