@@ -1,5 +1,10 @@
+import numpy as np
+
 def test_addition():
     assert 1 + 1 == 2
 
 def test_soustraction():
     assert 1 - 1 == 0
+
+def test_division():
+    np.assert_allclose(3/2, 1.5, rtol=1e-5, atol=0)
