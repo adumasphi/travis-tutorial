@@ -17,3 +17,4 @@ install:
 
 script:
   - docker run -v $PWD:/var/travis_tutorial test-container /bin/bash -c "cd /var/travis_tutorial && pytest"
+  
