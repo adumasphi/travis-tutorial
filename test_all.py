@@ -7,4 +7,4 @@ def test_soustraction():
     assert 1 - 1 == 0
 
 def test_division():
-    np.testing.assert_allclose(3/2, 1.5, rtol=1e-5, atol=0)
+    np.testing.assert_equal(3/2, 1.5, rtol=1e-5, atol=0)
