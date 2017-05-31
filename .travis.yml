@@ -16,5 +16,5 @@ install:
   - pip install numpy==$NUMPY_VERSION
 
 script:
-  - python -c 'import numpy as np; print("numpy:", np.__version__)'
+  - python -c 'import numpy as np; print("numpy :", np.__version__)'
   - py.test
