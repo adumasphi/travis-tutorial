@@ -13,8 +13,7 @@ env:
   - NUMPY_VERSION=1.12.1
   
 install:
-  - pip install numpy==$NUMPY_VERSION
+  - docker build -t test-container --build-arg numpy_version=$NUMPY_VERSION .
 
 script:
-  - python -c 'import numpy as np; print("numpy :", np.__version__)'
-  - py.test
+- docker run -v $PWD:/var/travis_tutorial test-container /bin/bash -c "cd /var/travis_tutorial && pytest"
